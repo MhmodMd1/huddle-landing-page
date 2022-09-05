@@ -1,0 +1,309 @@
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.main {
+    width: 100%;
+    height: auto;
+}
+/* Start First Look */
+.main .first-look {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-color: var(--Very-Pale-Cyan);
+}
+.main .first-look header {
+    width: 100%;
+    height: 50px;
+    padding: 35px 0;
+}
+.main .first-look header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .first-look header img {
+    width: 200px;
+}
+.main .first-look header button {
+    background-color: white;
+    color: var(--Very-Dark-Cyan);
+    border: none;
+    width: 190px;
+    padding: 15px 0px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main .first-look .content .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .first-look .content .text {
+    flex-basis: 42%;
+}
+.main .first-look .content .text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--Very-Dark-Cyan);
+    font-weight: bold;
+}
+.main .first-look .content .text p {
+    line-height: 1.5;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.main .first-look .content .text button {
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Cyan);
+    border: none;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.main .first-look .content img {
+    flex-basis: 50%;
+    width: 50%;
+}
+/* End First Look */
+/* Start Boxes */
+.main .boxes {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.main .boxes .box {
+    width: calc(100% - 50px);
+    display: flex;
+    padding: 60px 0;
+    padding-left: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 10px, rgba(17, 17, 26, 0.05) 0px 8px 12px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.main .boxes .box-two {
+    flex-direction: row-reverse;
+    padding-left: 0;
+    padding-right: 50px;
+}
+.main .boxes .box .text {
+    flex-basis: 43%;
+}
+.main .boxes .box-three .text {
+    flex-basis: 42%;
+}
+.main .boxes .box .text h2 {
+    margin-bottom: 20px;
+    color: var(--Very-Dark-Cyan);
+}
+.main .boxes .box .text p {
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+.main .boxes .box img {
+    width: 350px;
+    flex-basis: 40%;
+}
+/* End Boxes */
+/* Start Card  */
+.main .card {
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 10px, rgba(17, 17, 26, 0.05) 0px 8px 12px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -70px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    border-radius: 10px;
+}
+.main .card h3 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.main .card button {
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Cyan);
+    border: none;
+    width: 350px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 20px 20px;
+    border-radius: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 10px, rgba(17, 17, 26, 0.05) 0px 8px 12px;
+    margin-top: 20px;
+}
+/* End Card  */
+/* Start Footer */
+.main .footer {
+    background-color: var(--Very-Dark-Cyan);
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: -1;
+}
+.main .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.main .footer .item-one {
+    flex-basis: 33%;
+}
+.main .footer .item-one .info .col{
+    display: flex;
+    margin-bottom: 20px;   
+}
+.main .footer .item-one .info .col .image {
+    margin-right: 20px;
+}
+.main .footer .item-one .info .col p {
+    color: var(--Very-Pale-Cyan)
+}
+.main .footer .item-two , .main .footer .item-three {
+    flex-basis: 22%;
+    justify-content: center;
+    display: flex;
+}
+.main .footer .item-two ul , .main .footer .item-three ul {
+    list-style: none;
+}
+.main .footer .item-two ul li , .main .footer .item-three ul li {
+    color: var(--Very-Pale-Cyan);
+    margin-bottom: 15px;
+}
+.main .footer .item-four {
+    flex-basis: 15%;
+}
+.main .footer .item-four .icons i{
+    color: var(--Very-Pale-Cyan);
+    margin-right: 10px;
+    width: 35px;
+    border: 1px solid var(--Very-Pale-Cyan);
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+}
+/* End Footer */
+
+@media (max-width: 750px ) {
+    /* Start First Look */
+    .main .first-look {
+        background-image: url(../images/bg-hero-mobile.svg);
+    }
+    .main .first-look header img{
+        width: 100px;
+    }
+    .main .first-look header button{
+        width: 100px;
+        font-size: 12px;
+    }
+    .main .first-look .content .container {
+        flex-direction: column;
+    }
+    .main .first-look .content .container .text {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .main .first-look .content .container .text  h1 {
+        font-size: 25px;
+    }
+    .main .first-look .content .container .text p {
+        font-size: 15px;
+    }
+    .main .first-look .content .container img {
+        width: 250px;
+        margin-bottom: 25px;
+    }
+    /* End First Look */
+    /* Start Boxes */
+    .main .boxes {
+        width: 100%;
+    }
+    .main .boxes .box {
+        padding: 25px ;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main .boxes .box .text {
+        flex-basis: 50%;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .main .boxes .box .text h2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    .main .boxes .box .text p {
+        font-size: 13px;
+    }
+    .main .boxes .box img {
+        width: 250px;
+        flex-basis: 50%;
+    }
+    /* End Boxes */
+    /* Start Card  */
+    .main .card {
+        width: calc(90% - 20px);
+        height: 150px;
+        padding: 10px;
+    }
+    .main .card h3 {
+        font-size: 18px;
+    }
+    .main .card button {
+        width: 60%;
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+    /* End Card  */
+    /* Start Footer */
+
+    .main .footer .container {
+        flex-direction: column;
+    }
+    .main .footer .item-two , .main .footer .item-three {
+        justify-content: flex-start;
+    }
+    .main .footer .item-four {
+        margin: auto;
+    }
+    /* End Footer */
+}
